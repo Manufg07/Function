@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+        function add(x,y){
+            let z=x+y
+            document.write("<br><br>The sum of two number is:",z)
+        }
+        // function add(x,y,z){
+        //     let p=x+y+z
+        //     document.write("<br><br>The sum of two number is:",p)
+        // }
+        let a=100;
+        let b=300;
+        c=a+b;
+        document.write(`a=${a},b=${b} <br>sum of two numbers c=`+c+"<br>")
+        function sum(){
+            let x=50;
+            let y=70;
+            let z=x+y;
+            document.write(`<br>Sum of a=${x},b=${y} is:`+z);
+
+        }
+        sum();
+        document.write("<br><br>This is an example for functions in JS")
+        document.write("<br>This is an example for functions calling")
+        sum();
+        let p=20;
+        let q=35;
+        add(p,q);
+        add(200,800);
+        add(a=10,b=30);
+        let m=55;
+        let n=125
+        add(m,n)
+
+// Functions without return statement
+        {
+            
+            function sum(x,y,z){
+            let p=x+y+z
+            document.write(`<br><br>Funtions without return statement<br><br>The sum of three number is ${x},${y},${z}:`,p)
+
+        }
+            let a=20;
+            let b=30;
+            let c=50;
+            sum(a,b,c)
+
+            // sum(35,55,75)
+        }
+
+
+//Function using return statement
+        {
+            
+            function add(x,y,z){
+            let p=x+y+z
+            return p;
+        }
+            let a=100;
+            let b=200;
+            let c=300;
+
+            let x=add(a,b,c)
+            document.write(`<br><br>Funtions using return statements<br><br>The sum of three number ${a},${b},${c} is:`,x)
+            let z=x*3;
+            document.write(`<br>Result x*3 is:`,z)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your name:
+    <input type="text" id="text" onchange="Display_text()">
+    <br><br>Entered Values<br>
+    <p id="demo"></p>
+    <script>
+        let values=[];
+        function Display_text(){
+            let x=document.getElementById("text").value;
+            values.push(x)
+            document.getElementById("demo").innerHTML=values.join(",");
+        }
+    </script>
+</body>
+</html>
